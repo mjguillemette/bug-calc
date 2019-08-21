@@ -17,7 +17,7 @@ const QAView = props => {
         setValue={props.setDevTesting}
         className="QABox"
         inputType="checkbox"
-        text="One trend in software development is to move toward developer-based testing over a dedicated QA team. Variables such as project scope and complexity can affect this decision."
+        text="One trend in software development is to assign test automation to the development team rather than a dedicated QA team. Variables including project scope and complexity can affect this decision."
       />
       <InputBox
         name="Automated QA"
@@ -28,7 +28,7 @@ const QAView = props => {
         setValue={props.setAutomatedQA}
         className="QABox"
         inputType="checkbox"
-        text="Test automation is the use of external software to test and to monitor test coverage. Automated QA can perform tests that are difficult to implement manually. Third-party specialists such as ProdPerfect can assist in the creation and maintenance of these automated tests, allowing your development and quality assurance teams to focus on more dynamic areas of development."
+        text="Test automation is the use of software to test an application to ensure functionality. Automated QA can perform tests that are repetitive and expensive when performed manually. Third-party products such as ProdPerfect can assist in the creation and maintenance of these automated tests, allowing your development and quality assurance teams to focus on more dynamic areas of development."
       />
     </div>
   )

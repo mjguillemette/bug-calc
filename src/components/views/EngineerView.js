@@ -36,7 +36,8 @@ const EngineerView = props => {
         maxInput="1500"
         minInput="250"
         step="50"
-        text="Another factor in determining the cost incurred due to bugs involves the number of lines of code your team writes. Every new or updated line of code increases the likelihood of generating yet another bug."
+        text="Another factor in determining the total cost incurred from bugs involves approximating the of lines of code the engineering team writes over a given period. Every new or updated line of code increases the likelihood of generating another bug.
+        "
       />
       <InputBox
         id="Duration"
@@ -51,7 +52,7 @@ const EngineerView = props => {
         maxInput="12"
         minInput="1"
         step=".5"
-        text="Project length can vary greatly. Enter the anticipated number of months in which a project will be coded."
+        text="Project length can vary greatly. Enter the anticipated number of months in which a project will be coded. If the project is indefinite/ongoing (such as a team continually maintaining and expanding a core product) then enter 12 months to estimate your annual costs."
       />
       <InputBox
         id="Defects"
@@ -66,7 +67,7 @@ const EngineerView = props => {
         maxInput="60"
         minInput="1"
         step="1"
-        text="In one case study, Microsoft found that through the internal testing phase between 10-20 lines of in each 1k LoC contained defects (Moore 1992). This number can vary greatly depending on factors such as the seniority of your software development team, and the methods that they employ."
+        text="In one case study, Microsoft found that through the internal testing phase, approximate 10-20 defects (or bugs) are produced on average per every 1000 lines of code (LoC) (Moore 1992). This number can vary greatly depending on factors like the seniority of your software development team, and the methods that they employ. Based on this average, approximate how many defects per 1000 LoC your team might produce."
       />
     </div>
   )
