@@ -18,14 +18,14 @@ const Page = props => {
           defects={props.defects}
           setDefects={props.setDefects}
         />
-        <QAView
+        {/* <QAView
           dedicatedQA={props.dedicatedQA}
           setDedicatedQA={props.setDedicatedQA}
           devTesting={props.devTesting}
           setDevTesting={props.setDevTesting}
           automatedQA={props.automatedQA}
           setAutomatedQA={props.setAutomatedQA}
-        />
+        /> */}
         <ResultView
           engineers={props.engineers}
           duration={props.duration}

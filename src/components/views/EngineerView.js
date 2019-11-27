@@ -14,23 +14,22 @@ const EngineerView = props => {
         id="Engineers"
         value={props.engineers}
         setValue={props.setEngineers}
-        name="Engineers"
+        name="How many engineers are on the team?"
         isSelected={engineersSelected}
         setSelected={setEngineersSelected}
         className="EngineersBox"
         inputType="range"
         maxInput="20"
         minInput="1"
-        text="The size of an engineering team is a good indicator of the complexity of a project. More engineers working on a project means more logical lines of code (LLoC) produced."
+        text="The size of an engineering team is a reasonable indicator of the complexity of a project. More engineers working on a project translates to more logical lines of code (LLoCT) produced."
       />
       <InputBox
         id="LinesOfCode"
         value={props.linesOfCode}
         setValue={props.setLinesOfCode}
-        name="Lines of Code"
+        name="How many lines of code does each engineer write per month?"
         isSelected={linesOfCodeSelected}
         setSelected={setLinesOfCodeSelected}
-        subText="/ month"
         className="EngineersBox"
         inputType="range"
         maxInput="1500"
@@ -43,10 +42,9 @@ const EngineerView = props => {
         id="Duration"
         value={props.duration}
         setValue={props.setDuration}
-        name="Duration"
+        name="How many months does a project take to complete?"
         isSelected={durationSelected}
         setSelected={setDurationSelected}
-        subText="in months"
         className="EngineersBox"
         inputType="range"
         maxInput="12"

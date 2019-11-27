@@ -16,7 +16,7 @@ const InputHeading = styled.div`
   display: flex;
 `
 const DisplayValue = styled.input`
-  left: 1.2em;
+  left: 1.3em;
   color: #2a272a;
   width: 2.9em;
   height: 1.1em;
@@ -24,13 +24,12 @@ const DisplayValue = styled.input`
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 0.3rem;
-  margin: auto;
+  margin: 0;
   top: 0.6em;
-  position: absolute;
   text-align: center;
   font-size: 1.4rem;
   font-weight: 400;
-  display: flex;
+  display: block;
 `
 
 const handleChange = (event, props) => {
@@ -110,20 +109,22 @@ export default props => {
             flexDirection: 'column'
           }}
         >
+          <div onClick={() => handleSelect(props)}>
+            <h3 className="InputLabel">
+              {props.name} <span className="SubText">{props.subText}</span>
+            </h3>
+          </div>
+          <span className="InputText" id={props.id + 'Text'}>
+            {props.text}
+          </span>
           <DisplayValue
             type="number"
             onChange={event => handleChange(event, props)}
             style={{
-              display: 'flex',
               userSelect: 'text'
             }}
             value={props.value}
           />
-          <div onClick={() => handleSelect(props)}>
-            <h3 className="InputLabel" style={{ marginLeft: '4.3em' }}>
-              {props.name} <span className="SubText">{props.subText}</span>
-            </h3>
-          </div>
           <input
             id={props.id}
             type={props.inputType}
@@ -144,9 +145,6 @@ export default props => {
           />
         </InputHeading>
         <br />
-        <span className="InputText" id={props.id + 'Text'}>
-          {props.text}
-        </span>
       </InputBox>
     )
   }

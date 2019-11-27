@@ -27,10 +27,10 @@ h2 {
 }
 
 .View {
-  margin: 0 0 6px;
-  width: 96vw;
-  max-width: 470px;
-  min-width: 420px;
+  margin: auto;
+  width: 40%;
+  max-width: 680px;
+  min-width: 600px;
 }
 
 .PageHeading {
@@ -42,8 +42,8 @@ h2 {
 
 .InputLabel {
   font-weight: normal;
-  font-size: 1.3rem;
-  line-height: 12px;
+  font-size: 0.01rem;
+  line-height: 1em;
   margin-top: 5px;
 }
 

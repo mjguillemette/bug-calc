@@ -1,4 +1,5 @@
 import React from 'react'
+import FormBox from '../FormBox'
 import Graph from '../Graph'
 
 const ResultView = props => {
@@ -86,6 +87,7 @@ const ResultView = props => {
       Found at 100X: {(percent100X * totalBugs).toFixed(0)} -- $
       {dollarsAt100X.toFixed(0)} <br />
       <h2>Total Cost: {formatTotal}</h2> */}
+      {/* <FormBox /> */}
     </div>
   )
 }
